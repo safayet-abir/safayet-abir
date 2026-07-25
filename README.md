@@ -63,12 +63,12 @@ I am a Computer Science student and aspiring Software Engineer who enjoys turnin
 <p align="center">
   <img
     width="49%"
-    src="https://github-readme-stats.vercel.app/api?username=safayet-abir&show_icons=true&hide_border=true&bg_color=00000000&title_color=22d3ee&icon_color=a78bfa&text_color=cbd5e1&ring_color=22d3ee"
+    src="https://github-stats-extended.vercel.app/api?username=safayet-abir&show_icons=true&hide_border=true&bg_color=00000000&title_color=22d3ee&icon_color=a78bfa&text_color=cbd5e1&ring_color=22d3ee"
     alt="Safayet Abir GitHub statistics"
   />
   <img
     width="49%"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=safayet-abir&layout=compact&hide_border=true&bg_color=00000000&title_color=22d3ee&text_color=cbd5e1"
+    src="https://github-stats-extended.vercel.app/api/top-langs/?username=safayet-abir&layout=compact&hide_border=true&bg_color=00000000&title_color=22d3ee&text_color=cbd5e1"
     alt="Safayet Abir most used languages"
   />
 </p>

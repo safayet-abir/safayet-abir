@@ -1,0 +1,85 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.48" stop-color="#0B1328"/>
+      <stop offset="1" stop-color="#130A25"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="270" y1="80" x2="915" y2="275" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.55" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#22D3EE" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <clipPath id="screen">
+      <rect x="65" y="58" width="330" height="240" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="29" stroke="url(#neon)" stroke-opacity=".55" stroke-width="2"/>
+
+  <circle cx="105" cy="40" r="150" fill="url(#glow)" opacity=".16" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".10;.23;.10" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1090" cy="310" r="190" fill="#A78BFA" opacity=".10" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".06;.18;.06" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Terminal card -->
+  <rect x="55" y="48" width="350" height="260" rx="24" fill="#09101C" stroke="#23304A" stroke-width="2"/>
+  <circle cx="84" cy="78" r="7" fill="#FB7185"/>
+  <circle cx="108" cy="78" r="7" fill="#FBBF24"/>
+  <circle cx="132" cy="78" r="7" fill="#34D399"/>
+  <text x="245" y="84" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#64748B">developer.sh</text>
+
+  <g clip-path="url(#screen)" font-family="Consolas, monospace" font-size="18">
+    <text x="82" y="130" fill="#22D3EE">$</text>
+    <text x="105" y="130" fill="#CBD5E1">whoami</text>
+    <text x="82" y="166" fill="#A78BFA">Safayet Abir</text>
+    <text x="82" y="207" fill="#22D3EE">$</text>
+    <text x="105" y="207" fill="#CBD5E1">status</text>
+    <text x="82" y="243" fill="#34D399">learning • building • improving</text>
+    <rect x="82" y="268" width="12" height="23" rx="2" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0;1" dur=".9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Main text -->
+  <text x="470" y="102" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="7" fill="#94A3B8">HELLO, I'M</text>
+  <text x="468" y="180" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="url(#neon)">SAFAYET ABIR</text>
+  <text x="470" y="226" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#E2E8F0">Computer Science Student  •  Aspiring Software Engineer</text>
+  <text x="470" y="274" font-family="Consolas, monospace" font-size="19" fill="#94A3B8">build()  →  learn()  →  improve()  →  repeat()</text>
+
+  <!-- Moving underline -->
+  <path d="M470 302 H1080" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M470 302 H670" stroke="url(#neon)" stroke-width="4" stroke-linecap="round" stroke-dasharray="200 410">
+    <animate attributeName="stroke-dashoffset" values="0;-610" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Floating code symbols -->
+  <g font-family="Consolas, monospace" font-weight="700" fill="#22D3EE" opacity=".55">
+    <text x="1120" y="80" font-size="30">&lt;/&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 12;0 0" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="1015" y="126" font-size="24">{ }
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="1085" y="250" font-size="24">01
+      <animate attributeName="opacity" values=".25;.8;.25" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Decorative particles -->
+  <g fill="#A78BFA">
+    <circle cx="438" cy="64" r="3"><animate attributeName="cy" values="64;52;64" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1110" cy="160" r="4"><animate attributeName="r" values="3;6;3" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="55" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
